@@ -17,6 +17,7 @@ public class NightState implements State {
     }
     public void doAlarm(Context context) {              // 비상벨
         context.callSecurityCenter("Alarm(NightState)");
+        context.changeState(UrgentState.getInstance());
     }
     public void doPhone(Context context) {              // 일반통화
         context.recordLog("Phone(NightState)");
