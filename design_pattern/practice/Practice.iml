@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/01_delegationProblem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/02_strategy" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/03_observerPractice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/04_hiroshi.State.Problem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/05_headfirst.iterator.dinemerger_pro" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/06_hiroshi.mediatorProblem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/07_factorymethod_mazeProblem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/08_headfirst.decorator.starbuzzProblem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/09_headfirst.decorator.io.skeleton" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/10_hiroshi.directoryCompositeProblem" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/11_interfaceVisitor" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_hiroshi.VisitorProblem" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
