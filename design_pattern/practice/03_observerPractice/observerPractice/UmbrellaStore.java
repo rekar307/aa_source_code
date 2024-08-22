@@ -1,6 +1,8 @@
 package observerPractice;
+import java.util.Observable;
+import java.util.Observer;
 
-public class UmbrellaStore {
+public class UmbrellaStore implements Observer {
 	
 	private boolean sellingState;
 	// default constructor
@@ -19,5 +21,11 @@ public class UmbrellaStore {
 
 	private void isSelling() {
 		System.out.println("Umbrella "+ ((sellingState) ? "":"Not ") + "Sale !");
+	}
+
+	@Override
+	public void update(Observable o, Object arg) {
+		WhetherDataSubject whetherData = (WhetherDataSubject)o;
+		whetherChanged(whetherData.getRainfall());
 	}
 }

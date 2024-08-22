@@ -1,6 +1,9 @@
 package observerPractice;
 
-public class ClothingStore {
+import java.util.Observable;
+import java.util.Observer;
+
+public class ClothingStore implements Observer {
 	private static final int SUMMER_CLOTHS = 1;
 	private static final int WINTER_CLOTHS = 2;
 	
@@ -21,5 +24,11 @@ public class ClothingStore {
 
 	private void kindOfSellingCloths() {
 		System.out.println("Selling " + ((state == SUMMER_CLOTHS) ? "Summer" : "Winter") + " cloths !");
+	}
+
+	@Override
+	public void update(Observable o, Object arg) {
+		WhetherDataSubject whetherData = (WhetherDataSubject)o;
+		whetherChanged(whetherData.getTemperature());
 	}
 }
