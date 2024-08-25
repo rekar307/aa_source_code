@@ -21,8 +21,8 @@ public class WeatherData implements Subject {
     private String weatherMain;
     private String weatherDesc;
 
-    String apiKey = "2136da88de01e46a534c4b82ee4951bc";
-    String cityName = "Seoul";
+    private String apiKey = "";
+    private String cityName = "";
 
     public WeatherData() {
         observers = new ArrayList<Observer>();
@@ -47,6 +47,14 @@ public class WeatherData implements Subject {
 
     public void measurementsChanged() {
         notifyObservers();
+    }
+
+    public void setToken(String token) {
+        this.apiKey = token;
+    }
+
+    public void setCity(String city) {
+        this.cityName = city;
     }
 
     public void setMeasurements(float temp, float temp_min, float temp_max, float humidity, float pressure, String weatherMain, String weatherDesc) {
