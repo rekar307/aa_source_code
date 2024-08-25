@@ -10,7 +10,7 @@ public class ForcastDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
-    public void update(WeatherData weatherData) {
+    public void update() {
         this.weatherMain = weatherData.getWeatherMain();
         this.weatherDescription = weatherData.getWeatherDesc();
         display();

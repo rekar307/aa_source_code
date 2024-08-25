@@ -10,7 +10,7 @@ public class StatisticsDisplay implements Observer, DisplayElement {
         weatherData.registerObserver(this);
     }
 
-    public void update(WeatherData weatherData) {
+    public void update() {
         this.tempMin = weatherData.getTempMin();
         this.tempMax = weatherData.getTempMax();
         display();
